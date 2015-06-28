@@ -9,6 +9,10 @@
     <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
          so we use a script file. -->
     <script src="app.js" defer></script>
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
   </head>
 
@@ -16,7 +20,13 @@
     <!-- This code is in the public domain. Enjoy! -->
     <h1>ライト</h1>
     <p>光をあててください！</p>
-    <input type="button" value="戻る" onclick="location.href='index.html'">
+    
+    <div data-role="footer" class="ui-bar" data-position="fixed">
+	   <a href="index.html" class="ui-btn ui-icon-home ui-btn-icon-left">ホーム</a>
+	   <a href="watering.html" class="ui-btn ui-btn-icon-left">水やり</a>
+	   <a href="camera.html" class="ui-btn ui-btn-icon-left">カメラ</a>
+	   <a href="light.html" class="ui-btn ui-btn-icon-left">ライト</a>
+    </div>
   </body>
 
 </html>
