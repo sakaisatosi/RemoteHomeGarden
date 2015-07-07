@@ -10,24 +10,30 @@
          so we use a script file. -->
     <script src="app.js" defer></script>
     
-<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
   </head>
 
   <body>
     <!-- This code is in the public domain. Enjoy! -->
-    <h1>RemoteHomeGarden</h1>
-    <input type="button" value="水やり" onclick="location.href='watering.html'">
-    <input type="button" value="カメラ" onclick="location.href='camera.html'">
-    <input type="button" value="ライト" onclick="location.href='light.html'">
+    <div data-role="header" class="ui-blue">
+     <h1>Remote Garden</h1>
+    </div>
     
-    <div data-role="footer" class="ui-bar" data-position="fixed">
-	   <a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">ホーム</a>
-	   <a href="watering.html" class="ui-btn ui-btn-icon-left">水やり</a>
-	   <a href="camera.html" class="ui-btn ui-btn-icon-left">カメラ</a>
-	   <a href="light.html" class="ui-btn ui-btn-icon-left">ライト</a>
+    <div role="main" class="ui-content">
+     <a href="watering.html" class="ui-btn ui-btn-icon-left ui-icon-drop">Watering</a>
+     <a href="light.html" class="ui-btn ui-btn-icon-left ui-icon-light">Light</a>
+     <a href="camera.html" class="ui-btn ui-btn-icon-left ui-icon-camera">Camera</a>
+    </div>
+    
+    <div data-role="footer" class="ui-bar" data-position="fixed" align="center">
+	   <a href="index.html" class="ui-btn"><img src="icons/home_blue.png"></a>
+	   <a href="watering.html" class="ui-btn"><img src="icons/drop_gray.png"></a>
+     <a href="light.html" class="ui-btn"><img src="icons/light_gray.png"></a>
+	   <a href="camera.html" class="ui-btn"><img src="icons/camera_gray.png"></a>
     </div>
   </body>
 

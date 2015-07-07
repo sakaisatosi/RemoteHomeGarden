@@ -1,0 +1,71 @@
+/* フォント */
+@font-face {
+	font-family: 'mplus-light';
+	src: url('font/mplus-2c-light.ttf');
+}
+
+@font-face {
+	font-family: 'mplus-thin';
+	src: url('font/mplus-2c-thin.ttf');
+}
+
+* {
+　font-family: "mplus-thin";
+}
+
+
+/* 色指定 */
+.ui-blue {
+  background-color: #79c9d5 !important;
+  color: white !important; 
+}
+
+.ui-yellow {
+  background-color: #eeea50 !important;
+  color: white !important; 
+}
+
+.ui-green {
+  background-color: #8dccb3 !important;
+  color: white !important; 
+}
+
+
+/* ボタン */
+.ui-icon-drop:after {
+  background-image: url("icons/drop_white.png");
+  background-color: transparent;
+  background-size: contain;
+}
+
+.ui-icon-drop {
+  background-color: #79c9d5 !important;
+  color: white !important; 
+}
+
+.ui-icon-light:after {
+  background-image: url("icons/light_white.png");
+  background-color: transparent;
+  background-size: contain;
+}
+
+.ui-icon-light {
+  background-color: #eeea50 !important;
+  color: white !important; 
+}
+
+.ui-icon-camera:after {
+  background-image: url("icons/camera_white.png");
+  background-color: transparent;
+  background-size: contain;
+}
+
+.ui-icon-camera {
+  background-color: #8dccb3 !important;
+  color: white !important; 
+}
+
+/* 回転 */
+.trans {
+  transform: rotate(45deg);
+}
